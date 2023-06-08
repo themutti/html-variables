@@ -6,10 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Variables Example</title>
+  <!-- Include the library -->
   <script src="./html-variables.js"></script>
 </head>
 
 <body>
+  <!-- Declare some variables -->
   <js-var name="myVar" value="hello"></js-var>
   <js-var name="str" value="world" type="string"></js-var>
   <js-var name="num" value="2" type="number"></js-var>
@@ -20,10 +22,14 @@
   <p>Check the console to see the library in action.</p>
 
   <script>
+    // Access the variables declared in HTML
     console.log(myVar, typeof myVar);
     console.log(str, typeof str);
     console.log(num, typeof num);
     console.log(bool, typeof bool);
+    // Edit one of the variables
+    myVar = "hi";
+    console.log(myVar);
   </script>
 </body>
 
